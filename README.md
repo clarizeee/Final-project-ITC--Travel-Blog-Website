@@ -7,9 +7,11 @@ The main file is located at "index. html". Please click that to access the home 
 # Sources
 A lot of images, descriptions, animations and JavaScript portions are sourced online. 
 
-Here are my sources:
-&nbsphttps://matcha-jp.com/en/4360
-&nbsphttps://floracion.es/en/floracion-en-zamora/#:~:text=Poppy%20Flowering&text=Poppies%2C%20with%20their%20delicate%2C%20passion, the%20 arrival%20 of%20 sunnier%20 days.
-&nbsphttps://www.civitatis.com/blog/en/top-flower-fields-world/
-&nbsphttps://codepen.io/wvyeun/pen/QRNwGW
-&nbsphttps://htmlstream.com/preview/front-v3.2/documentation/aos.html
+### Flower Fields Information
+1. [Matcha - Flower Fields in Japan](https://matcha-jp.com/en/4360)
+2. [Floracion - Poppy Flowering in Zamora](https://floracion.es/en/floracion-en-zamora/#:~:text=Poppy%20Flowering&text=Poppies%2C%20with%20their%20delicate%2C%20passion, the%20 arrival%20 of%20 sunnier%20 days.)
+3. [Civitatis - Top Flower Fields in the World](https://www.civitatis.com/blog/en/top-flower-fields-world/)
+
+### Web Development Resources
+1. [CodePen Example](https://codepen.io/wvyeun/pen/QRNwGW)
+2. [AOS - Animate On Scroll Documentation](https://htmlstream.com/preview/front-v3.2/documentation/aos.html)
