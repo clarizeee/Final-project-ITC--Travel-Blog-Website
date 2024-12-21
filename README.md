@@ -8,8 +8,8 @@ The main file is located at "index. html". Please click that to access the home 
 A lot of images, descriptions, animations and JavaScript portions are sourced online. 
 
 Here are my sources:
-https://matcha-jp.com/en/4360
-https://floracion.es/en/floracion-en-zamora/#:~:text=Poppy%20Flowering&text=Poppies%2C%20with%20their%20delicate%2C%20passion, the%20 arrival%20 of%20 sunnier%20 days.
-https://www.civitatis.com/blog/en/top-flower-fields-world/
-https://codepen.io/wvyeun/pen/QRNwGW
-https://htmlstream.com/preview/front-v3.2/documentation/aos.html
+&nbsphttps://matcha-jp.com/en/4360
+&nbsphttps://floracion.es/en/floracion-en-zamora/#:~:text=Poppy%20Flowering&text=Poppies%2C%20with%20their%20delicate%2C%20passion, the%20 arrival%20 of%20 sunnier%20 days.
+&nbsphttps://www.civitatis.com/blog/en/top-flower-fields-world/
+&nbsphttps://codepen.io/wvyeun/pen/QRNwGW
+&nbsphttps://htmlstream.com/preview/front-v3.2/documentation/aos.html
