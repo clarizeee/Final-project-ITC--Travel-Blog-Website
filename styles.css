@@ -1,0 +1,532 @@
+@font-face {
+    font-family:Moglan;
+    src: url(FONTS/Moglan_DEMO.ttf);
+}
+@font-face {
+    font-family:BR;
+    src: url(FONTS/Bligra-Regular.otf);
+}
+@font-face {
+    font-family:Mayfest;
+    src: url(FONTS/Mayfest_Regular\ -\ Demo.ttf);
+}
+@keyframes shootup {
+100% {
+    transform: translate(-50%, -2000px);   }           
+}
+
+:root {
+    --theme1: rgb(87, 121, 88);
+    --theme2: rgb(129, 147, 71);
+    --theme3: rgb(208, 214, 170);
+    --theme4: rgb(212, 211, 146);
+    --theme5: rgb(241, 223, 139);
+    --theme6: rgb(9, 13, 37);
+    --text: rgb(255, 255, 255);
+}
+
+@keyframes appear {
+100% {
+    opacity: 1;
+}
+}
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+body {
+    background-color: #aa887d;
+}
+
+h1 {
+    font-family: Moglan;
+    font-size: 50px;
+    color: var(--theme4);
+    letter-spacing: 4px;
+}
+p {
+    font-family: Mayfest;
+    color: var(--text);
+    font-size: 30px;
+}
+label {
+    font-family: BR;
+    font-size: 30px;
+}
+.hidden {
+    display: none; /* Hide the additional content by default */
+}
+.index {
+    position: relative;
+    min-height: 100vh; 
+    background-image: url('images/0f8b9c5f0baad96f51fb4267f7c20450.jpg');
+    background-size: cover;
+    background-attachment: local;
+    background-position: center;
+    overflow: hidden;
+    scrollbar-width: 0;
+}
+
+.indexp {
+    position: relative;
+    min-height: 100vh; /* Ensures the container takes at least the full height of the viewport */
+    height: auto; /* Allow height to grow based on content */
+    width: 100%;
+    background-attachment: local;
+    background-image: url('images/bubbles.jpg');
+    background-size: cover; 
+    background-position: center; 
+    overflow: auto; 
+    scrollbar-width: thin; 
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #58440c;
+    opacity: 0.50;
+    pointer-events: none; /* Allows clicks to pass through */
+}
+
+.overlayx {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #58440c;
+    opacity: 0.50;
+    pointer-events: none; /* Allows clicks to pass through */
+}
+
+.headerimg {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.image-container {
+    width: 100%;
+    margin-bottom: 240px;
+}
+.overlaytxt {
+    position: absolute; /* Position the overlay absolutely */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    color: white; /* Text color */
+    justify-content: center; /* Center horizontally */
+    margin-top: 250px;
+    z-index: 20; /* Ensure overlay is above the image */
+}
+
+h2 {
+    font-family: BR;
+}
+
+.overlaytxt h2 {
+    font-size: 35px;
+
+}
+.overlaytxt p {
+    font-size: 30px;
+}
+
+.image1{
+    position: absolute;
+    height: auto;
+    width: 80%;
+    top: 50%;               /* Position from the top */
+    left: 50%;              /* Position from the left */
+    transform: translate(-50%, -50%);
+    animation-name: shootup;         
+    animation-duration: 0.5s;            /* Duration of the animation */
+    animation-delay: 2s;               /* Delay before the animation starts */
+    animation-fill-mode: forwards;   
+    
+}
+.image2{
+    position: absolute;
+    height: auto;
+    width: 60%;
+    top: 60%;               /* Position from the top */
+    left: 50%;              /* Position from the left */
+    transform: translate(-50%, -50%);
+    animation-name: shootup;         
+    animation-duration: 0.5s;            /* Duration of the animation */
+    animation-delay: 2.05s;               /* Delay before the animation starts */
+    animation-fill-mode: forwards; 
+    
+}
+.image3{
+    position: absolute;
+    height: auto;
+    width: 20%;
+    top: 75%;               /* Position from the top */
+    left: 25%;              /* Position from the left */
+    transform: translate(-50%, -50%);
+    animation-name: shootup;         
+    animation-duration: 0.5s;            /* Duration of the animation */
+    animation-delay: 2.05s;               /* Delay before the animation starts */
+    animation-fill-mode: forwards; 
+    
+}
+
+.read-more-button{
+    background-color: var(--theme5);
+    width: auto;
+    border-radius: 20px;
+    height: 40px;
+    padding: 10px;
+}
+.actualContent {
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; 
+}
+.AboutContent {
+    position: relative;
+    display: flex;
+    align-items: center;         /* Center items vertically */
+    justify-content: center;     /* Center items horizontally */
+    flex-direction: column;      /* Stack items vertically (optional) */
+    width: 100%;                 /* Ensure the container uses the full width */
+    height: auto;                /* Optional: set a height for the container */
+    text-align: center;    
+}
+
+.section_int {
+    position: relative;
+    top: 150px;
+    padding-left: 50px;
+    flex: 0 0 50%;              
+    box-sizing: border-box;  
+    align-items: center;
+
+}
+.navinvis {
+    text-align: right;
+    padding: 15px;
+}
+.nav {
+    text-align: right;
+    padding: 15px;
+    opacity: 1;
+    position: inherit;
+}
+.navinvis a {
+    color: var(--text);
+    padding-right: 10px;
+    font-size: 30px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+.nav a::before {
+    content: "◈"; 
+    margin-right: 5px;
+}
+
+.nav a:hover {
+    color: var(--theme5); 
+}
+
+
+.navinvis a::before {
+    content: "◈"; 
+    margin-right: 5px; 
+}
+
+.navinvis a:hover {
+    color: var(--theme5); 
+}
+.nav a {
+    color: var(--text);
+    padding-right: 10px;
+    font-size: 30px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    z-index: 10;
+}
+.porttitle {
+    position: relative;  
+    text-align: center;  
+    margin-bottom: 5px;  
+}
+
+.portfolio {
+    padding-top: 0%;    
+    display: flex;      
+    justify-content: center; /* Center elements horizontally */
+    gap: 30px;          /* Space between portfolio items */
+    margin: 0 50px;    /* Margin on left and right */
+}
+
+.location {
+    width: 750px;
+    height: auto;
+    margin-bottom: 100px;
+    padding: 30px;
+    background-color: var(--theme2);
+    border-radius: 60px;
+}
+.location img {
+    width: auto;
+    height: 400px;
+}
+.location p {
+    font-size: 20px;
+}
+.location h2 {
+    font-size: 40px;
+    color: var(--theme4)
+}
+.portfolioelem1 {
+    padding: 10px;
+    position: relative;  /* Keep it relative */
+    width: 300px;
+    height: 360px;
+    border: 1px solid #cc9a9a;
+    border-top-right-radius: 20px;
+    background-color: #e7e6e6;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+}
+.portfolioelem2 {
+    padding: 10px;
+    position: relative;  /* Keep it relative */
+    width: 300px;
+    height: 400px;
+    border: 1px solid #cc9a9a;
+    border-top-right-radius: 20px;
+    background-color: #e7e6e6;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+}
+figure img {
+    width: 70px;
+    height: auto;
+}
+.portfolioelem1 h2 {
+    font-family: Moglan;
+    font-size: 35px;
+    color:#c56030
+}
+.portfolioelem1 p {
+    font-size: 20px;
+    color:#702f1a
+}
+.portfolioelem2 h2 {
+    font-family: Moglan;
+    font-size: 35px;
+    color:#c56030
+}
+.portfolioelem2 p {
+    font-size: 20px;
+    color:#702f1a
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--theme1);
+    opacity: 1;
+}
+footer p {
+    margin: 5px;
+    color: var(--theme4);
+}
+
+footer a {
+
+    color: var(--theme2); 
+
+}
+
+.formcon{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 400px;
+    position: relative;
+    margin: 0 auto;
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--theme4);
+}
+.formcon label {
+    color:#1f0a03
+}
+.formcon h1 {
+    color:#1f0a03
+}
+input[type="text"] {
+    height: 20px;
+    background-color: var(--theme5);
+    
+}
+input[type="text"]:focus {
+    background-color: var(--text);
+    
+}
+input[type="text"]:hover {
+    background-color: var(--text);
+    
+}
+
+
+input[type="email"] {
+    height: 20px;
+    background-color: var(--theme5);
+    
+}
+input[type="email"]:focus {
+    background-color: var(--text);
+    
+}
+input[type="email"]:hover {
+    background-color: var(--text);
+    
+}
+
+.button {
+    size: 30px;
+    font-size: 20px;
+    font-family: BR;
+    background-color: var(--theme2);
+    border: none;
+    height: 30px;
+}
+.button button {
+    size: 30px;
+    font-size: 20px;
+    font-family: BR;
+    border: none;
+    height: auto;
+    background-color: var(--theme2);
+    text-decoration: none;
+}
+
+.ABOUT {
+    position: absolute;
+    text-align: center;
+    padding-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.aboutc{
+    padding-top: 0%;    
+    display: flex;     
+    justify-content: center; /* Center elements horizontally */
+    gap: 30px;          /* Space between portfolio items */
+    margin: 0 50px;  
+}
+@media screen and (max-width: 1000px) {
+
+    @keyframes shootup {
+    100% {
+    transform: translate(-50%, -2500px);               
+}
+    }
+
+    .image2{
+        position: absolute;
+        height: auto;
+        width: 60%;
+        top: 52%;               /* Position from the top */
+        left: 50%;              /* Position from the left */
+        transform: translate(-50%, -50%);
+        animation-name: shootup;         
+        animation-duration: 0.5s;            /* Duration of the animation */
+        animation-delay: 2.05s;               /* Delay before the animation starts */
+        animation-fill-mode: forwards; 
+        
+    }
+    .image3{
+        position: absolute;
+        height: auto;
+        width: 35%;
+        top: 56%;               /* Position from the top */
+        left: 25%;              /* Position from the left */
+        transform: translate(-50%, -50%);
+        animation-name: shootup;         
+        animation-duration: 0.5s;            /* Duration of the animation */
+        animation-delay: 2.05s;               /* Delay before the animation starts */
+        animation-fill-mode: forwards; 
+        
+    }
+    .portfolio {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        overflow: scroll;   /* Center each item */
+    }
+
+    .portfolioelem1 {
+        width: 90%;          /* Set width to 90% of the container */
+        max-width: 300px;    /* Limit max width */
+        margin-bottom: 20px; /* Add space between stacked items */
+    }
+
+    .porttitle {
+        font-size: 36px; /* Reduce font size for title on smaller screens */
+    }
+    .AboutContent {
+        flex-direction: column;  /* Stack sections vertically */
+    }
+    .index {
+        overflow: scroll;
+    }
+    .formcon{
+        top: 70px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 400px;
+        position: relative;
+        margin: 0 auto;
+        width: 600px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #cca67b;
+}
+}
+.raagh {
+    background-color: var(--theme1);
+    background-image: url('images/header.gif');
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.yeah {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 300px; /* Set a height for the container */
+    margin-bottom: 40px;
+}
